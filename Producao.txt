@@ -1,0 +1,5 @@
+issn; titulo; tipo; ano
+2002489019346835; Sistema Web para Gerenciamento de uma Rede de Sensores Sem Fio aplicada à Agricultura de Precisão"; TRABALHO-EM-EVENTOS; 2013
+6165165599787140; Análise Temporal de Lesões em Mamografias Digitalizadas usando Índice de Similaridade; TRABALHO-EM-EVENTOS; 2014
+4300669916019534; Análise de nódulos pulmonares usando índices de diversidades para estabelecer possíveis diferenças entre padrões malignos e benignos; TRABALHO-EM-EVENTOS; 2014
+4888226471480235; Contagem Automática de Ovos de Mosquito da Dengue em Imagem de Ovitrampa; TRABALHO-EM-EVENTOS; 2014
