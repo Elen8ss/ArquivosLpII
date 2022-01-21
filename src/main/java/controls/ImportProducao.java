@@ -6,21 +6,22 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashSet;
 import java.util.Hashtable;
 
 public class ImportProducao {
 
-    public Hashtable<String, Producao> importarProducoes(String arquivo) {
-        Hashtable<String, Producao> novaProducao = new Hashtable<>();
+    public HashSet<Producao> importarProducoes(String arquivo) {
+        HashSet<Producao> novaProducao = new HashSet<>();
 
         try {
             BufferedReader leitor = new BufferedReader(new FileReader(arquivo));
 
-            String linha = leitor.readLine();
+            String linha= leitor.readLine();
             while ((linha = leitor.readLine()) != null) {
                 try {
                     String tmp[] = linha.split(";");
-                    novaProducao.put(tmp[0], new Producao(tmp[0], tmp[1], tmp[2], tmp[3]));
+                    novaProducao.add(new Producao(tmp[0], tmp[1], tmp[2], tmp[3]));
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -36,32 +37,33 @@ public class ImportProducao {
         return novaProducao;
     }
 
-    public void buscarPorData(Hashtable<String, Producao> producoes, String data) {
-        for (Producao p: producoes.values()) {
+    public void buscarPorData(HashSet<Producao> producoes, String data) {
+        for (Producao p : producoes) {
             if (p.getAno().contains(data)) {
-                System.out.println("Id: "+ p.getId());
+                System.out.println("Issn: " + p.getIssn());
+                System.out.println("Titulo: " + p.getTitulo());
+                System.out.println("Autor: " + p.getAutor());
+                System.out.println("Ano: " + p.getAno());
+                System.out.println("----------------");
+            }
+        }
+    }
+
+    public void buscarPorDataTipo(HashSet<Producao> producoes, String tipo, String data) {
+        for (Producao p: producoes) {
+            if (p.getIssn().contains(tipo) && p.getAno().contains(data)){
+                System.out.println("Id: "+ p.getIssn());
                 System.out.println("Titulo: "+ p.getTitulo());
-                System.out.println("Tipo: "+ p.getTipo());
+                System.out.println("Tipo: "+ p.getAutor());
                 System.out.println("Ano: "+ p.getAno());
             }
         }
     }
 
-    public void buscarPorDataTipo(Hashtable<String, Producao> producoes, String data, String tipo) {
-        for (Producao p: producoes.values()) {
-            if (p.getAno().contains(data) && p.getTipo().contains(tipo)){
-                System.out.println("Id: "+ p.getId());
-                System.out.println("Titulo: "+ p.getTitulo());
-                System.out.println("Tipo: "+ p.getTipo());
-                System.out.println("Ano: "+ p.getAno());
-            }
-        }
-    }
-
-    public int contaProducaoTipoData(Hashtable<String, Producao> producoes, String data, String tipo) {
+    public int contaProducaoTipoData(HashSet<Producao> producoes, String data, String tipo) {
         int contProducoes=0;
-        for (Producao p: producoes.values()) {
-            if (p.getAno().contains(data) && p.getTipo().contains(tipo)){
+        for (Producao p: producoes) {
+            if (p.getAno().contains(data) && p.getIssn().contains(tipo)){
                 contProducoes ++;
             }
         }

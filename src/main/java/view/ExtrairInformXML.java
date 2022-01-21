@@ -25,27 +25,33 @@ public class ExtrairInformXML {
                 Document document = documentBuilder.parse(file);
                 NodeList curriculo = document.getElementsByTagName("CURRICULO-VITAE");
                 NodeList dados = document.getElementsByTagName("DADOS-GERAIS");
-                NodeList projetos = document.getElementsByTagName("PROJETO-DE-PESQUISA");
+
+                NodeList producao = document.getElementsByTagName("PRODUCAO-BIBLIOGRAFICA");
+                NodeList autores = document.getElementsByTagName("AUTORES");
 
                 int tamLista = curriculo.getLength();
 
                 for (int i=0; i<tamLista; i++){
                     Node nodeCurriculo = curriculo.item(i);
                     Node nodeDados = dados.item(i);
-                    Node nodeProjetos = projetos.item(i);
-                    if (nodeCurriculo.getNodeType() == Node.ELEMENT_NODE && nodeDados.getNodeType() == Node.ELEMENT_NODE && nodeProjetos.getNodeType() == Node.ELEMENT_NODE){
+                    Node nodeProducao = producao.item(i);
+                    Node nodeAutores =autores.item(i);
+                    if (nodeCurriculo.getNodeType() == Node.ELEMENT_NODE && nodeDados.getNodeType() == Node.ELEMENT_NODE && nodeProducao.getNodeType() == Node.ELEMENT_NODE ){
                         Element elementCurriculo = (Element) nodeCurriculo;
                         Element elementDadosGerais = (Element) nodeDados;
-                        Element elementProjeto = (Element) nodeProjetos;
+                        Element elementProducao = (Element) nodeProducao;
+                        Element elementAutores = (Element) nodeAutores;
+
                         String id = elementCurriculo.getAttribute("NUMERO-IDENTIFICADOR");
                         String nome = elementDadosGerais.getAttribute("NOME-COMPLETO");
-                        String projetoInicio = elementProjeto.getAttribute("ANO-INICIO");
-                        String projetoFim = elementProjeto.getAttribute("ANO-FIM");
-                        String projetoNome = elementProjeto.getAttribute("NOME-DO-PROJETO");
+                        String anoInicio = elementProducao.getAttribute("ANO-DO-TRABALHO");
+                        String autor = elementAutores.getAttribute("NOME-COMPLETO-DO-AUTOR");
+
                         System.out.println("Id \tNome ");
                         System.out.println( id + " - " + nome);
-                        System.out.println("\nAno_Inicio \tAno_Fim \tProjeto ");
-                        System.out.println(projetoInicio + " - " + projetoFim + " - " + projetoNome);
+                        //System.out.println("\nAno_Inicio \tAno_Fim \tProjeto ");
+
+                        System.out.println(anoInicio + " - " +autor);
                     }
                 }
 

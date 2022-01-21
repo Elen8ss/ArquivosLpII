@@ -1,9 +1,9 @@
 package view;
 
 import controls.ImportProducao;
-import entidade.Curriculo;
 import entidade.Producao;
 
+import java.util.HashSet;
 import java.util.Hashtable;
 
 public class Main {
@@ -12,8 +12,9 @@ public class Main {
 
         ImportProducao imp = new ImportProducao();
 
-        Hashtable<String, Producao> prod = imp.importarProducoes("Producao.txt");
-        imp.buscarPorData(prod, "2014");
+        HashSet<Producao> prod = imp.importarProducoes("Producao.txt");
+
+        imp.buscarPorDataTipo(prod, "01692607", "2020");
 
     }
 }

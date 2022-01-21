@@ -1,19 +1,15 @@
 package entidade;
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.Scanner;
-
 public class Producao {
-    private String id;
+    private String issn;
     private String titulo;
-    private String tipo;
+    private String autor;
     private String ano;
 
-    public Producao(String id, String titulo, String tipo, String ano){
-        this.id = id;
+    public Producao(String issn, String titulo, String autor, String ano){
+        this.issn = issn;
         this.titulo = titulo;
-        this.tipo = tipo;
+        this.autor = autor;
         this.ano = ano;
     }
 
@@ -21,12 +17,12 @@ public class Producao {
 
     }
 
-    public String getId() {
-        return id;
+    public String getIssn() {
+        return issn;
     }
 
-    public void setId(String issn) {
-        this.id = id;
+    public void setIssn(String issn) {
+        this.issn = issn;
     }
 
     public String getTitulo() {
@@ -37,12 +33,12 @@ public class Producao {
         this.titulo = titulo;
     }
 
-    public String getTipo() {
-        return tipo;
+    public String getAutor() {
+        return autor;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setAutor(String autor) {
+        this.autor = autor;
     }
 
     public String getAno() {

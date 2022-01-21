@@ -1,5 +1,35 @@
-issn; titulo; tipo; ano
-2002489019346835; Sistema Web para Gerenciamento de uma Rede de Sensores Sem Fio aplicada à Agricultura de Precisão"; TRABALHO-EM-EVENTOS; 2013
-6165165599787140; Análise Temporal de Lesões em Mamografias Digitalizadas usando Índice de Similaridade; TRABALHO-EM-EVENTOS; 2014
-4300669916019534; Análise de nódulos pulmonares usando índices de diversidades para estabelecer possíveis diferenças entre padrões malignos e benignos; TRABALHO-EM-EVENTOS; 2014
-4888226471480235; Contagem Automática de Ovos de Mosquito da Dengue em Imagem de Ovitrampa; TRABALHO-EM-EVENTOS; 2014
+issn; titulo; autor; ano
+13807501; An ontology-based approach to integrate TV and IoT middlewares; Danne Makleyston Gomes Pereira; 2020
+21754411; Análise temporal de lesões em mamografias utilizando índices de similaridade; João Otávio Bandeira Diniz; 2016
+21754411; Segmentação de massas em mamografias utilizando índices de similaridade; João Otávio Bandeira Diniz; 2016
+01692607; Detection of mass regions in mammograms by bilateral analysis adapted to breast density using similarity indexes and convolutional neural networks; João Otávio Bandeira Diniz; 2018
+01692607; Detection of white matter lesion regions in MRI using SLIC0 and convolutional neural network; João Otávio Bandeira Diniz; 2018
+10577149; Modified Quality Threshold Clustering for Temporal Analysis and Classification of Lung Lesions; João Otávio Bandeira Diniz; 2019
+01692607; Spinal cord detection in planning CT for radiotherapy through adaptive template matching, IMSLIC and convolutional neural networks; João Otávio Bandeira Diniz; 2019
+00457906; Temporal analysis of lung lesions through dynamic shape features; João Otávio Bandeira Diniz; 2019
+01692607; An automatic method for lung segmentation and reconstruction in chest X-Ray using deep neural networks; João Otávio Bandeira Diniz; 2019
+15737721; Diagnosis of breast tissue in mammography images based local feature descriptors; João Otávio Bandeira Diniz; 2018
+22372903; Spinal cord segmentation as OAR in planning CT for radiotherapy using histogram matching, template matching, and U-Net; João Otávio Bandeira Diniz; 2020
+09333657; Breast cancer diagnosis from histopathological images using textural features and CBIR; João Otávio Bandeira Diniz; 2020
+00104825; Kidney segmentation from computed tomography images using deep neural network; João Otávio Bandeira Diniz; 2020
+01692607; Esophagus segmentation from planning CT images using an atlas-based deep learning approach; João Otávio Bandeira Diniz; 2020
+19326203; Automatic segmentation of retinal layers in OCT images with intermediate age-related macular degeneration using U-Net and DexiNed; João Otávio Bandeira Diniz; 2021
+09574174; Automatic method for classifying COVID-19 patients based on chest X-ray images, using deep features and PSO-optimized XGBoost; João Otávio Bandeira Diniz; 2021
+13807501; Segmentation and quantification of COVID-19 infections in CT using pulmonary vessels extraction and deep learning; João Otávio Bandeira Diniz; 2021
+17468094; A deep learning method with residual blocks for automatic spinal cord segmentation in planning CT; João Otávio Bandeira Diniz; 2022
+09521976; Forecasting of individual electricity consumption using Optimized Gradient Boosting Regression with Modified Particle Swarm Optimization; João Otávio Bandeira Diniz; 2021
+09574174; Kidney tumor segmentation from computed tomography images using DeepLabv3+ 2.5D model; João Otávio Bandeira Diniz; 2022
+00104825; Liver segmentation from computed tomography images using cascade deep learning; João Otávio Bandeira Diniz; 2022
+24464740; Taxonomic indexes for differentiating malignancy of lung nodules on CT images; Giovanni Lucca França da Silva; 2016
+15737721; Lung nodules diagnosis based on evolutionary convolutional neural network; Giovanni Lucca França da Silva; 2017
+01692607; Convolutional neural network-based PSO for lung nodule false positive reduction on CT images; Giovanni Lucca França da Silva; 2018
+17410444; Classification of malignant and benign lung nodules using taxonomic diversity index and phylogenetic distance; Giovanni Lucca França da Silva; 2018
+17410444; Superpixel-based deep convolutional neural networks and active contour model for automatic prostate segmentation on 3D MRI scans; Giovanni Lucca França da Silva; 2020
+13807501; Segmentation and quantification of COVID-19 infections in CT using pulmonary vessels extraction and deep learning; Giovanni Lucca França da Silva; 2021
+09574174; Automatic method for classifying COVID-19 patients based on chest X-ray images, using deep features and PSO-optimized XGBoost; Giovanni Lucca França da Silva; 2021
+01692607; An automatic method for lung segmentation and reconstruction in chest X-ray using deep neural networks; Giovanni Lucca França da Silva; 2019
+21754411; DIAGNÓSTICO DE GLAUCOMA EM RETINOGRAFIAS BASEADO EM GEOESTATÍSTICA; Jefferson Alves de Sousa; 2016
+13807501; Texture based on geostatistic for glaucoma diagnosis from fundus eye image; Jefferson Alves de Sousa; 2017
+15737721; Glaucoma diagnosis in fundus eye images using diversity indexes; Jefferson Alves de Sousa; 2018
+01692607; Interferometer eye image classification for dry eye categorization using phylogenetic diversity indexes for texture analysis; Jefferson Alves de Sousa; 2020
+19326203; Automatic segmentation of retinal layers in OCT images with intermediate age-related macular degeneration using U-Net and DexiNed; Jefferson Alves de Sousa; 2021
