@@ -1,10 +1,10 @@
 issn; titulo; autor; ano
-13807501; An ontology-based approach to integrate TV and IoT middlewares; Danne Makleyston Gomes Pereira; 2020
-21754411; Análise temporal de lesões em mamografias utilizando índices de similaridade; João Otávio Bandeira Diniz; 2016
-21754411; Segmentação de massas em mamografias utilizando índices de similaridade; João Otávio Bandeira Diniz; 2016
-01692607; Detection of mass regions in mammograms by bilateral analysis adapted to breast density using similarity indexes and convolutional neural networks; João Otávio Bandeira Diniz; 2018
-01692607; Detection of white matter lesion regions in MRI using SLIC0 and convolutional neural network; João Otávio Bandeira Diniz; 2018
-10577149; Modified Quality Threshold Clustering for Temporal Analysis and Classification of Lung Lesions; João Otávio Bandeira Diniz; 2019
+13807501; An ontology-based approach to integrate TV and IoT middlewares; Danne Makleyston Gomes Pereira, DA S. E SILVA, FRANCISCO JOSÉ, DA S. E SILVA, FRANCISCO JOSÉ, DOS SANTOS, DAVI VIANA, COUTINHO, LUCIANO REISGUEDES, ÁLAN L. V; 2020
+21754411; Análise temporal de lesões em mamografias utilizando índices de similaridade; João Otávio Bandeira Diniz, Aristófanes Côrrea Silva, Anselmo Cardoso Paiva, Marcelo Gattass; 2016
+21754411; Segmentação de massas em mamografias utilizando índices de similaridade; João Otávio Bandeira Diniz, Pedro Henrique Bandeira Diniz, Aristófanes Côrrea Silva, Anselmo Cardoso Paiva, Marcelo Gattass; 2016
+01692607; Detection of mass regions in mammograms by bilateral analysis adapted to breast density using similarity indexes and convolutional neural networks; João Otávio Bandeira Diniz, BANDEIRA DINIZ, PEDRO HENRIQUE, AZEVEDO VALENTE, THALES LEVI, CORRÊA SILVA, ARISTÓFANES, DE PAIVA, ANSELMO CARDOSO, GATTASS, MARCELO; 2018
+01692607; Detection of white matter lesion regions in MRI using SLIC0 and convolutional neural network; João Otávio Bandeira Diniz, DINIZ, PEDRO HENRIQUE BANDEIRA, VALENTE, THALES LEVI AZEVEDO,SILVA, ARISTÓFANES CORRÊA, GATTASS, MARCELO, VENTURA, NINA, MUNIZ, BERNARDO CARVALHO, GASPARETTO, EMERSON LEANDRO; 2018
+10577149; Modified Quality Threshold Clustering for Temporal Analysis and Classification of Lung Lesions; João Otávio Bandeira Diniz, NETTO, STELMO MAGALHAES BARROS; 2019
 01692607; Spinal cord detection in planning CT for radiotherapy through adaptive template matching, IMSLIC and convolutional neural networks; João Otávio Bandeira Diniz; 2019
 00457906; Temporal analysis of lung lesions through dynamic shape features; João Otávio Bandeira Diniz; 2019
 01692607; An automatic method for lung segmentation and reconstruction in chest X-Ray using deep neural networks; João Otávio Bandeira Diniz; 2019
