@@ -47,5 +47,13 @@ public class Producao {
         this.ano = ano;
     }
 
-
+    @Override
+    public String toString() {
+        return "Producao{" +
+                "issn='" + issn + '\'' +
+                ", titulo='" + titulo + '\'' +
+                ", autor='" + autor + '\'' +
+                ", ano='" + ano + '\'' +
+                '}';
+    }
 }
