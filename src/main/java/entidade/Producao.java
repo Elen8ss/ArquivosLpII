@@ -1,25 +1,19 @@
 package entidade;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
 public class Producao {
     private String issn;
     private String titulo;
-    private ArrayList autor = new ArrayList<>();
+    private String autor;
     private String ano;
 
 
-    public Producao(String issn, String titulo, ArrayList autor, String ano){
+    public Producao(String issn, String titulo, String autor, String ano){
         this.issn = issn;
         this.titulo = titulo;
-        this.autor = new ArrayList<>();
+        this.autor = autor;
         this.ano = ano;
     }
 
-    public Producao() {
-
-    }
 
     public String getIssn() {
         return issn;
@@ -37,11 +31,11 @@ public class Producao {
         this.titulo = titulo;
     }
 
-    public ArrayList getAutor() {
+    public String getAutor() {
         return autor;
     }
 
-    public void setAutor(ArrayList autor) {
+    public void setAutor(String autor) {
         this.autor = autor;
     }
 

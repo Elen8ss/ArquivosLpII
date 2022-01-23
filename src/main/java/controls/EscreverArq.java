@@ -15,9 +15,9 @@ public class EscreverArq {
             bw.close();
 
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            System.out.println("Error");
         } catch (IOException ex) {
-            ex.printStackTrace();
+            System.out.println("Error");
         }
 
     }

@@ -3,10 +3,8 @@ package controls;
 import entidade.Producao;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Hashtable;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class ImportProducao {
 
@@ -20,7 +18,8 @@ public class ImportProducao {
             while ((linha = leitor.readLine()) != null) {
                 try {
                     String tmp[] = linha.split(";");
-                    novaProducao.add(new Producao(tmp[0], tmp[1], new ArrayList<>(Collections.singleton(tmp[2])), tmp[3]));
+
+                    novaProducao.add(new Producao(tmp[0], tmp[1], tmp[2] , tmp[3]));
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -42,7 +41,7 @@ public class ImportProducao {
             for (Producao p : producoes) {
                 if (p.getAno().contains(data)) {
                     String espaco = "\n----------------------\n";
-                    String dados = "Id: " + p.getIssn() + "\n" + "Titulo: " + p.getTitulo() + "\n" + "Autores: " + p.getAutor() + "\n" + "Ano: " + p.getAno() + espaco;
+                    String dados = "Id: " + p.getIssn() + "\n" + "Titulo: " + p.getTitulo() + "\n" + "Autores: " + "[ " + p.getAutor() +" ]" + "\n" + "Ano: " + p.getAno() + espaco;
                     escrever.exportarProducoes(arquivo, dados);
                 }
             }
@@ -57,7 +56,7 @@ public class ImportProducao {
             for (Producao p : producoes) {
                 if (p.getIssn().contains(tipo) && p.getAno().contains(data)) {
                     String espaco = "\n----------------------\n";
-                    String dados = "Id: " + p.getIssn() + "\n" + "Titulo: " + p.getTitulo() + "\n" + "Autores: " + p.getAutor() + "\n" + "Ano: " + p.getAno() + espaco;
+                    String dados = "Id: " + p.getIssn() + "\n" + "Titulo: " + p.getTitulo() + "\n" + "Autores: " + "[ " + p.getAutor() +" ]" + "\n" + "Ano: " + p.getAno() + espaco;
                     escrever.exportarProducoes(arquivo, dados);
                 }
             }
